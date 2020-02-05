@@ -1,0 +1,38 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "process",
+            "label": "Ceres - Run",
+            "command": "ceres",
+            "args": ["run", "--", "--map", "mpq.w3x", "--output", "mpq"],
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "problemMatcher": []
+        },
+
+        {
+            "type": "process",
+            "label": "Ceres - Build",
+            "command": "ceres",
+            "args": ["build", "--", "--map", "mpq.w3x", "--output", "mpq"],
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "type": "process",
+            "label": "TSTL",
+            "command": "npm",
+            "args": ["run", "watch"],
+            "problemMatcher": ["$tsc"],
+            "options": {
+                "cwd": "${workspaceRoot}"
+            }
+        }
+    ]
+}
