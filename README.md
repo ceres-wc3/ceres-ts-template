@@ -1,6 +1,6 @@
 # Ceres + TypeScript + Cerrie Template
 
-This repository contains a sample configuration for using Ceres with TypeScript.
+This branch contains a sample configuration for using Ceres with TypeScript and [Cerrie](https://github.com/ceres-wc3/cerrie).
 
 ## Quick Start
 
@@ -20,13 +20,16 @@ This repository contains a sample configuration for using Ceres with TypeScript.
 
 ### Running the map via Ceres
 
+**_ Important! This section differs from the normal `ceres-ts-template` setup. If you want Live Reload to work (which is enabled by default), you will need to also setup `ceres.runConfig.mapDataDir`! You can read more about Live Reload in the [Cerrie repository](https://github.com/ceres-wc3/cerrie)._**
+
 If you want to make Ceres to run WC3 by itself, you can use the `ceres run` command. However, before you can do that, it requires some configuration on your part.
 Open up `runconfig.lua` and fill out the necessary configuration parameters. As a minimal example:
 
 ```lua
 ceres.runConfig = {
     command = "C:/Program Files/Warcraft III/x86_64/Warcraft III.exe",
-    args = {"-windowmode", "windowed"}
+    args = {"-windowmode", "windowed"},
+    mapDataDir = "C:/Users/Me/My Documents/Warcraft III/CustomMapData"
 }
 ```
 
