@@ -1,8 +1,14 @@
 /* eslint-disable @typescript-eslint/triple-slash-reference */
-// This is necessary to bring in Lua and Ceres declarations into the scope
-// Another alternative is to put these into the `types` array in `tsconfig.json`
-/// <reference types="lua-types/5.3"/>
-/// <reference types="ceres-decl/ceres"/>
+// Cerrie has a master declaration file which you can use instead of Ceres/Lua ones.
+/// <reference types="cerrie/decl"/>
+
+// This initializes Cerrie utilities. Cerrie needs this imported to run properly.
+import "cerrie/init"
+
+// This will enable live-reload in your map!
+// Simply press F2 when in-game and it will trigger a recompilation
+// It's useful to run `npm run watch` to automatically recompile all TS files as you edit them
+import "cerrie/livereload"
 
 import { example } from "example"
 import { hello } from "./submodule"

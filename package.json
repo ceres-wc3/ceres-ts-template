@@ -22,5 +22,8 @@
         "tsc-watch": "^4.1.0",
         "typescript": "^3.7.5",
         "typescript-to-lua": "^0.31.0"
+    },
+    "dependencies": {
+        "cerrie": "^1.0.1"
     }
 }

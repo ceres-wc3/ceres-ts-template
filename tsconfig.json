@@ -11,14 +11,13 @@
         "moduleResolution": "node",
         "outDir": "target/compiled",
         "rootDir": "./src/ts",
-        // "types": ["lua-types/5.3", "ceres-decl/ceres"],
         "declaration": false
     },
-    "include": ["src", "decl/cerrie.d.ts"],
+    "include": ["src/ts"],
     "tstl": {
         "luaTarget": "5.3",
         "noHeader": true,
-        "luaLibImport": "require",
+        "luaLibImport": "always",
         "noImplicitSelf": true
     }
 }
