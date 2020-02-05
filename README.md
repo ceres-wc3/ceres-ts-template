@@ -2,7 +2,7 @@
 
 This repository contains a sample configuration for using Ceres with TypeScript.
 
-There is also a separate template for setting up Ceres with TypeScript and Cerrie - a library which aims to provide an idiomatic set of libraries for WC3, as well as offering some neat features such as Live Reload and File I/O out of the box.
+There is also a [separate template](https://github.com/ceres-wc3/ceres-ts-template/tree/cerrie) for setting up Ceres with TypeScript and Cerrie - a library which aims to provide an idiomatic set of libraries for WC3, as well as offering some neat features such as Live Reload and File I/O out of the box.
 
 ## Quick Start
 
