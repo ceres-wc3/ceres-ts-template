@@ -24,6 +24,6 @@
         "typescript-to-lua": "^0.31.0"
     },
     "dependencies": {
-        "cerrie": "^1.0.1"
+        "cerrie": "^1.0.2"
     }
 }

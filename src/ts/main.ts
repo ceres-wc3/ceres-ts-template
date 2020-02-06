@@ -1,8 +1,4 @@
-/* eslint-disable @typescript-eslint/triple-slash-reference */
-// Cerrie has a master declaration file which you can use instead of Ceres/Lua ones.
-/// <reference types="cerrie/decl"/>
-
-// This initializes Cerrie utilities. Cerrie needs this imported to run properly.
+// This initializes Cerrie and brings its utility functions into scope.
 import "cerrie/init"
 
 // This will enable live-reload in your map!
